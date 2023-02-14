@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/own_blog
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.163.com
+    username: zjp_student@163.com
+    password: GNNAQEBWNSXNMBRZ
+#  security:
+#    user:
+#      name: user
+#      password: 123456
+#文件上传路径
+file:
+  upload:
+    ab_path: C:/Users/zjp/Desktop/test/note/
+    url_path: /note/**
+    mdImageDir: /note/image/
+    bookImg: /note/bookImg/
+
+server:
+  port: 8080
+
+
